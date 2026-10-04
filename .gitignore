@@ -2,4 +2,7 @@ myvenv/
 __pycache__/
 *.pyc
 db.sqlite3
-static/
+/static/
+book_api.py
+instance/
+blog/static_old.txt
