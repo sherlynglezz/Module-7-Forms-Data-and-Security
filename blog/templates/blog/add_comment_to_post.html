@@ -1,0 +1,12 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <h2>Add a comment</h2>
+    <p>Your comment will appear publicly after approval.</p>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Send comment</button>
+    </form>
+{% endblock %}
